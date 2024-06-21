@@ -1,23 +1,4 @@
 
-// function getRandomInt(min, max) {
-//   return Math.floor(Math.random() * (max - min + 1)) + min;
-// }
-// var randomNumber = getRandomInt(50, 750);
-
-// dataArray2.forEach(video => {
-//   video.views = getRandomViews();
-// });
-
-// function getRandomViews() {
-//   dataArray2.forEach(video => {
-//     console.log(video);
-//     video.views = getRandomViews();
-//     console.log(video.views);
-//   });
-//   return Math.floor(Math.random() * (250 - 50 + 1)) + 50;
-// }
-
-
 function getRandomViews() {
   return Math.floor(Math.random() * (250 - 50 + 1)) + 50;
 }
@@ -26,11 +7,9 @@ function getRandomMonth() {
   return Math.floor(Math.random() * 12) + 1;
 }
 
-
  export const arrayVIDEOS = [
     { video: "https://www.youtube.com/embed/DvD04e8lS70?si=8-e6UctpwIH0sE5P",
       image: "https://yt3.ggpht.com/v0qeWuW6uFcBnQUeQlS_miw4uQBcwCLC3tmKh7-E6u250A1OeprB_SU2Qdp84kX2Fl5NYTSF=s88-c-k-c0x00ffffff-no-rj",
-      // h2: 'How to make YouTube Thumbnails the right way',
       p: 'Bike Corporation',
       subp: 'BIKES',
       views: getRandomViews() + 'K ' + 'views',
@@ -38,7 +17,6 @@ function getRandomMonth() {
      },
     { video: "https://www.youtube.com/embed/KFGES0sESy0?si=v-eIaqmGfPfEXOCu",
       image: "https://yt3.ggpht.com/ytc/AIdro_nHgBIZGT8xQ3QQZZrrCu5pwL7_YLljwnE40xdf9j5RYg=s88-c-k-c0x00ffffff-no-rj",
-      //h2: 'How to make YouTube Thumbnails the right way',
       p: 'Car Electric',
       subp: 'CARS',
       views: getRandomViews() + 'K ' + 'views',
@@ -46,7 +24,6 @@ function getRandomMonth() {
      },
     { video: "https://www.youtube.com/embed/H1Xg9CGjNl8?si=7G8xhIwq8MDZHuvH",
       image: "https://yt3.ggpht.com/v0qeWuW6uFcBnQUeQlS_miw4uQBcwCLC3tmKh7-E6u250A1OeprB_SU2Qdp84kX2Fl5NYTSF=s88-c-k-c0x00ffffff-no-rj",
-      //h2: 'How to make YouTube Thumbnails the right way',
       p: 'Car Electric',
       subp: 'CARS',
       views: getRandomViews() + 'K ' + 'views',
@@ -54,7 +31,6 @@ function getRandomMonth() {
      },
     { video: "https://www.youtube.com/embed/GXNdJnErY-U?si=1EFNDd7c8F2bWk9O",
       image: "https://yt3.ggpht.com/ytc/AIdro_lu37cx9Mwp8Hgr-jJOVqysQh9gG3xg1NNG90c2ZGMbiQ=s88-c-k-c0x00ffffff-no-rj",
-      //h2: 'How to make YouTube Thumbnails the right way',
       p: 'Car Electric',
       subp: 'CARS',
       views: getRandomViews() + 'K ' + 'views',
@@ -62,7 +38,6 @@ function getRandomMonth() {
      },
     { video: "https://www.youtube.com/embed/7OJgjhmSD_w?si=ekIFgJqRxnxs9UUM",
       image: "https://yt3.ggpht.com/XAglNNPebEf3wwHcojELt2y3I383egCgfzz1mSnX5Q_u7V5Q6hA2J8obQKUdAjv0vKfIAEsBjA=s88-c-k-c0x00ffffff-no-rj",
-      //h2: 'How to make YouTube Thumbnails the right way',
       p: 'Bike Corporation',
       subp: 'BIKES',
       views: getRandomViews() + 'K ' + 'views',
@@ -70,7 +45,6 @@ function getRandomMonth() {
      },
     { video: "https://www.youtube.com/embed/dZIpG7hFHEw?si=x8ae0FiYXaGjmf4p",
       image: "https://yt3.ggpht.com/ytc/AIdro_nHgBIZGT8xQ3QQZZrrCu5pwL7_YLljwnE40xdf9j5RYg=s88-c-k-c0x00ffffff-no-rj",
-      //h2: 'How to make YouTube Thumbnails the right way',
       p: 'Fly Sky',
       subp: 'PLANES',
       views: getRandomViews() + 'K ' + 'views',
@@ -78,7 +52,6 @@ function getRandomMonth() {
      },
     { video: "https://www.youtube.com/embed/hSG5oDCFgOs?si=Hde-31rVDS0EH_Py",
       image: "https://yt3.ggpht.com/deIUPkYmEX0NheGfJ5inOVNiDZ6DUQY6bzR5e7fWRnh0HxTNBBG75B5NWqd_k_KLsuX5FYOH=s88-c-k-c0x00ffffff-no-rj",
-      //h2: 'How to make YouTube Thumbnails the right way',
       p: 'Bike Corporation',
       subp: 'BIKES',
       views: getRandomViews() + 'K ' + 'views',
@@ -86,7 +59,6 @@ function getRandomMonth() {
      },
     { video: "https://www.youtube.com/embed/RYa_MQ_Fxrc?si=NG2XXT7LKjf9aCnb",
       image: "https://yt3.ggpht.com/gD0AUeYcwI7gA8KI-mO2C8M8hQme2Ue4ShMICF-ST7MOWB8HxMHvP9egp6Ub9HMn64XLGTJNyQ=s88-c-k-c0x00ffffff-no-rj",
-      //h2: 'How to make YouTube Thumbnails the right way',
       p: 'Fly Sky',
       subp: 'PLANES',
       views: getRandomViews() + 'K ' + 'views',
@@ -94,7 +66,6 @@ function getRandomMonth() {
      },
     { video: "https://www.youtube.com/embed/mqrG2bk7eBc?si=Xa5d6zZiJNPjrR-Q",
       image: "https://yt3.ggpht.com/ytc/AIdro_nCscyQwQnZ6oG7MbY_TURwsPQzC2tjds1XsXXyeOnhsqk=s88-c-k-c0x00ffffff-no-rj",
-      //h2: 'How to make YouTube Thumbnails the right way',
       p: 'Bike Corporation',
       subp: 'BIKES',
       views: getRandomViews() + 'K ' + 'views',
@@ -102,7 +73,6 @@ function getRandomMonth() {
      },
     { video: "https://www.youtube.com/embed/gdcdkOFZqOQ?si=Um6ls_wZmEHFpWbP",
       image: "https://yt3.ggpht.com/21kkPXmfgygVWdiwJwHraIi9CdekwYE4dn6fCqiS2xgJUdL4xvFeKe3s16wL4ToQzUE2Mhlj=s88-c-k-c0x00ffffff-no-rj",
-      //h2: 'How to make YouTube Thumbnails the right way',
       p: 'Sea Boats',
       subp: 'BOATS',
       views: getRandomViews() + 'K ' + 'views',
@@ -110,7 +80,6 @@ function getRandomMonth() {
      },
     { video: "https://www.youtube.com/embed/I3O0g2jqYSI?si=S3FQO8cbtCZaNkre",
       image: "https://yt3.ggpht.com/ytc/AIdro_lu37cx9Mwp8Hgr-jJOVqysQh9gG3xg1NNG90c2ZGMbiQ=s88-c-k-c0x00ffffff-no-rj",
-      //h2: 'How to make YouTube Thumbnails the right way',
       p: 'Bike Corporation',
       subp: 'BIKES',
       views: getRandomViews() + 'K ' + 'views',
@@ -118,7 +87,6 @@ function getRandomMonth() {
      },
     { video: "https://www.youtube.com/embed/DvD04e8lS70?si=8-e6UctpwIH0sE5P",
       image: "https://yt3.ggpht.com/v0qeWuW6uFcBnQUeQlS_miw4uQBcwCLC3tmKh7-E6u250A1OeprB_SU2Qdp84kX2Fl5NYTSF=s88-c-k-c0x00ffffff-no-rj",
-      //h2: 'How to make YouTube Thumbnails the right way',
       p: 'Bike Corporation',
       subp: 'BIKES',
       views: getRandomViews() + 'K ' + 'views',
@@ -126,7 +94,6 @@ function getRandomMonth() {
      },
     { video: "https://www.youtube.com/embed/KFGES0sESy0?si=v-eIaqmGfPfEXOCu",
       image: "https://yt3.ggpht.com/ytc/AIdro_nHgBIZGT8xQ3QQZZrrCu5pwL7_YLljwnE40xdf9j5RYg=s88-c-k-c0x00ffffff-no-rj",
-      //h2: 'How to make YouTube Thumbnails the right way',
       p: 'Car Electric',
       subp: 'CARS',
       views: getRandomViews() + 'K ' + 'views',
@@ -134,7 +101,6 @@ function getRandomMonth() {
      },
     { video: "https://www.youtube.com/embed/H1Xg9CGjNl8?si=7G8xhIwq8MDZHuvH",
       image: "https://yt3.ggpht.com/v0qeWuW6uFcBnQUeQlS_miw4uQBcwCLC3tmKh7-E6u250A1OeprB_SU2Qdp84kX2Fl5NYTSF=s88-c-k-c0x00ffffff-no-rj",
-      //h2: 'How to make YouTube Thumbnails the right way',
       p: 'Car Electric',
       subp: 'CARS',
       views: getRandomViews() + 'K ' + 'views',
@@ -142,7 +108,6 @@ function getRandomMonth() {
      },
     { video: "https://www.youtube.com/embed/GXNdJnErY-U?si=1EFNDd7c8F2bWk9O",
       image: "https://yt3.ggpht.com/ytc/AIdro_lu37cx9Mwp8Hgr-jJOVqysQh9gG3xg1NNG90c2ZGMbiQ=s88-c-k-c0x00ffffff-no-rj",
-      //h2: 'How to make YouTube Thumbnails the right way',
       p: 'Car Electric',
       subp: 'CARS',
       views: getRandomViews() + 'K ' + 'views',
@@ -150,7 +115,6 @@ function getRandomMonth() {
      },
     { video: "https://www.youtube.com/embed/7OJgjhmSD_w?si=ekIFgJqRxnxs9UUM",
       image: "https://yt3.ggpht.com/XAglNNPebEf3wwHcojELt2y3I383egCgfzz1mSnX5Q_u7V5Q6hA2J8obQKUdAjv0vKfIAEsBjA=s88-c-k-c0x00ffffff-no-rj",
-      //h2: 'How to make YouTube Thumbnails the right way',
       p: 'Bike Corporation',
       subp: 'BIKES',
       views: getRandomViews() + 'K ' + 'views',
@@ -158,7 +122,6 @@ function getRandomMonth() {
      },
     { video: "https://www.youtube.com/embed/dZIpG7hFHEw?si=x8ae0FiYXaGjmf4p",
       image: "https://yt3.ggpht.com/ytc/AIdro_nHgBIZGT8xQ3QQZZrrCu5pwL7_YLljwnE40xdf9j5RYg=s88-c-k-c0x00ffffff-no-rj",
-      //h2: 'How to make YouTube Thumbnails the right way',
       p: 'Sky Fly',
       subp: 'PLANES',
       views: getRandomViews() + 'K ' + 'views',
@@ -166,7 +129,6 @@ function getRandomMonth() {
      },
     { video: "https://www.youtube.com/embed/hSG5oDCFgOs?si=Hde-31rVDS0EH_Py",
       image: "https://yt3.ggpht.com/deIUPkYmEX0NheGfJ5inOVNiDZ6DUQY6bzR5e7fWRnh0HxTNBBG75B5NWqd_k_KLsuX5FYOH=s88-c-k-c0x00ffffff-no-rj",
-      //h2: 'How to make YouTube Thumbnails the right way',
       p: 'Bike Corporation',
       subp: 'BIKES',
       views: getRandomViews() + 'K ' + 'views',
@@ -174,7 +136,6 @@ function getRandomMonth() {
      },
     { video: "https://www.youtube.com/embed/RYa_MQ_Fxrc?si=NG2XXT7LKjf9aCnb",
       image: "https://yt3.ggpht.com/gD0AUeYcwI7gA8KI-mO2C8M8hQme2Ue4ShMICF-ST7MOWB8HxMHvP9egp6Ub9HMn64XLGTJNyQ=s88-c-k-c0x00ffffff-no-rj",
-      //h2: 'How to make YouTube Thumbnails the right way',
       p: 'Bike Corporation',
       subp: 'BIKES',
       views: getRandomViews() + 'K ' + 'views',
@@ -182,7 +143,6 @@ function getRandomMonth() {
      },
     { video: "https://www.youtube.com/embed/mqrG2bk7eBc?si=Xa5d6zZiJNPjrR-Q",
       image: "https://yt3.ggpht.com/ytc/AIdro_nCscyQwQnZ6oG7MbY_TURwsPQzC2tjds1XsXXyeOnhsqk=s88-c-k-c0x00ffffff-no-rj",
-      //h2: 'How to make YouTube Thumbnails the right way',
       p: 'Bike Corporation',
       subp: 'BIKE',
       views: getRandomViews() + 'K ' + 'views',
@@ -190,7 +150,6 @@ function getRandomMonth() {
      },
     { video: "https://www.youtube.com/embed/gdcdkOFZqOQ?si=Um6ls_wZmEHFpWbP",
       image: "https://yt3.ggpht.com/21kkPXmfgygVWdiwJwHraIi9CdekwYE4dn6fCqiS2xgJUdL4xvFeKe3s16wL4ToQzUE2Mhlj=s88-c-k-c0x00ffffff-no-rj",
-     // h2: 'How to make YouTube Thumbnails the right way',
       p: 'Sea Boats',
       subp: 'BOATS',
       views: getRandomViews() + 'K ' + 'views',
@@ -198,20 +157,10 @@ function getRandomMonth() {
      },
     { video: "https://www.youtube.com/embed/I3O0g2jqYSI?si=S3FQO8cbtCZaNkre",
       image: "https://yt3.ggpht.com/ytc/AIdro_lu37cx9Mwp8Hgr-jJOVqysQh9gG3xg1NNG90c2ZGMbiQ=s88-c-k-c0x00ffffff-no-rj",
-      //h2: 'How to make YouTube Thumbnails the right way',
       p: 'Bike Corporation',
       subp: 'BIKES',
       views: getRandomViews() + 'K ' + 'views',
       period: getRandomMonth() + " months ago",
      },
-    // Add more objects as needed
 ];
-//export default dataArray2
-//export { dataArray2 }
 
-// dataArray2.forEach(video => {
-//   console.log(video);
-//   video.views = getRandomViews();
-//   console.log(video.views);
-// });
-//console.log(dataArray2);
