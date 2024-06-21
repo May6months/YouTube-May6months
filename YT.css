@@ -95,7 +95,6 @@ body {
 .navbar .navigation-icons { 
     display: flex;
     flex-wrap: nowrap;
-    ackground-color: lightgreen;
     position: relative;
 }
 
