@@ -1,4 +1,3 @@
-//import { arrayVIDEOS } from './db/db.mjs';
 
 
 document.addEventListener("DOMContentLoaded", async () => {
@@ -6,7 +5,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     const { arrayVIDEOS } = await import('./db/db.mjs');
 
     function createCard(card) {
-
     return `
     <div class="video">
     <div class="thumbnail">
@@ -14,7 +12,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     </div> 
         <div class="details">
             <div class="profile">
-                <img src=${card.image} alt="">
+                <img src=${card.image} alt="image">
             </div>
             <div class="video-details">
                 <p>${card.p}</p>
@@ -30,8 +28,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         </div>
     </div>
     `;
-
-    }
+    };
     // YT cards
     function createCards() {
         let container = document.querySelector('.video-grid');
@@ -53,7 +50,7 @@ const linkToYoutube = () => {
 linkToYoutube()
 
 
-// link to a YT channel
+// link to a YT Channel
 const linkToChannel = () => {
     const toChannel = document.querySelectorAll('.video-details p')
     toChannel.forEach((channel) => {
