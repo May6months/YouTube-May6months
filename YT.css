@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-
+/* start @media --------------------------------*/
 @media screen and (max-width: 1450px) {
     .video-grid { 
       max-width: 1000px;
@@ -18,7 +18,7 @@
       margin: 0 auto;
     }
   }
-
+/* end @media --------------------------------*/
 
 * {
     margin: 0;
@@ -39,78 +39,67 @@ body {
     position: sticky;
     top: 0;
     background: white;
-    ackground-color: green; /*mine*/
 }
+
 .navbar .logo {
     display: flex;
     align-items: center;
     margin-left: 8px;
 }
+
 .logo img {
     width: 100px;
     margin-left: 10px;
     cursor: pointer;
-    ackground-color: orange; /*main*/
 }
+
 .navbar .searchbar {
     display: flex;
     height: 32px;
-    eight: 40px; /*main*/
     align-items: center;
-    ackground-color: orange; /*mine*/
-    adding: 5px; /*mine*/
-    max-width: 600px; /*mine*/
-    width: 100%; /*mine*/
+    max-width: 600px; 
+    width: 100%; 
 }
 
 .search {
     display: flex;
-    /* border: 1px solid rgb(204, 204, 204); */
-    border: 1px solid rgb(158, 158, 158); /*main*/
-    ax-width: 600px; /*mine*/
-    width: 100%; /*mine*/
+    border: 1px solid rgb(158, 158, 158); 
+    width: 100%; 
     margin-right: 10px;
     height: 100%;
 }
+
 .search input {
     border: none;
     width: 90%;
     padding-left: 10px;
-    ackground-color: red; /*main*/
-    outline: none; /*main*/
+    outline: none; 
 }
 
-.search input[type='text']:focus { /*main block*/
+.search input[type='text']:focus { 
   background-color: lightgreen;
 }
 
 .search button {
-    min-width: 30px; /*main*/
+    min-width: 30px;
     border: none;
-    /* border-left: 1px solid rgb(204, 204, 204); */
-    border-left: 1px solid rgb(158, 158, 158); /*main*/
+    border-left: 1px solid rgb(158, 158, 158);
     width: 10%;
-    ackground-color: orange; /*main*/
     cursor: pointer;
 }
+
 .search button i {
     margin: 0;
 }
 
-.navbar .navigation-icons { /*main block*/
+.navbar .navigation-icons { 
     display: flex;
     flex-wrap: nowrap;
     ackground-color: lightgreen;
     position: relative;
 }
 
-.navbar .navigation-icons .material-icons:nth-child(3){ /*main block*/
-  olor: rgb(243, 229, 30);
-  rder: 2px dotted black;
-  sition: relative;
-}
-
-.navigation-icons .notification-icon{ /*main block*/
+.navigation-icons .notification-icon{ 
   background-color: red;
   color: white;
   width: 16px;
@@ -124,13 +113,12 @@ body {
   position: absolute;
   right: 39px;
   top: -5px;
-  /* z-index: 5; */
 }
 
 .material-icons {
     color: rgb(96, 96, 96);
     margin-right: 10px;
-    cursor: pointer; /*main*/
+    cursor: pointer; 
 }
 
 .mainbody {
@@ -139,12 +127,14 @@ body {
     overflow: hidden;
 }
 
+/* start left side ------------------------------*/
 .categories {
     width: 240px;
     height: 100%;
     background: white;
     overflow-y: scroll;
 }
+
 .category-section {
     border-bottom: 1px solid rgb(204, 204, 204);
     margin-top: 10px;
@@ -153,12 +143,14 @@ body {
 .category-section .category:last-child {
     margin-bottom: 10px;
 }
+
 .category_heading {
     margin: 10px 0px 10px 25px;
     color: rgb(96, 96, 96);
     font-size: 14px;
     font-weight: 500;
 }
+
 .category {
     width: 100%;
     display: flex;
@@ -169,23 +161,24 @@ body {
     font-weight: 400;
     cursor: pointer;
 }
+
 .category:hover {
-    /* background: rgb(249, 249, 249); */
-    background: rgb(208, 208, 208); /*main*/
+    background: rgb(208, 208, 208);
 }
-.category-section .category { /*main block*/
-    ackground-color: red;
-}
+
 .active {
     background: rgb(208, 208, 208);
     font-weight: 500;
 }
+
 .active:hover {
     background: rgb(208, 208, 208);
 }
+
 .active i {
     color: red;
 }
+
 .category i {
     margin-right: 24px;
 }
@@ -193,9 +186,11 @@ body {
 .cagories-footer {
     padding: 25px;
 }
+
 .footer-section {
     margin-bottom: 12px;
 }
+
 .footer-section span {
     font-size: 13px;
     font-weight: 500;
@@ -203,14 +198,16 @@ body {
     color: rgb(96, 96, 96);
     cursor: pointer;
 }
+
 .copyright {
     color: rgb(96, 96, 96);
     font-size: 13px;
     font-weight: 400;
     margin-bottom: 20px;
 }
-/*---------------------------- start -----------------------------------*/
-/* start ----------- layout*/
+/* end left side ------------------------------*/
+
+/* start videos layout ------------------------------*/
 .videos {
     width: calc(100vw - 240px);
     height: 100%;
@@ -219,12 +216,6 @@ body {
     overflow-y: scroll;
 }
 
-/* .video-grid {
-    display: flex;
-    padding: 15px;
-    flex-wrap: wrap;
-} */
-
 .video-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 0.7fr)); 
@@ -232,44 +223,26 @@ body {
     rder: 5px dotted red;
     padding: 5px;
 }
-/* end ----------- layout*/
-
+/* end videos layout ------------------------------*/
 
 /* start ----------- video-card--------*/
-/* .video {
-    width: calc(25% - 12px);
-    margin-right: 12px;
-    cursor: pointer;
-    margin-bottom: 35px;
-} */
-.video { /*main block*/
+.video { 
     width: 100%;
     border: 2px solid lightgrey;
 }
 
-/* .video .thumbnail img {
-    width: 100%;
-} */
-/* .videos .details {
-    display: flex;
-    margin-top: 5px;
-    width: 90%;
-} */
-/* .video .profile {
-    margin-right: 12px;
-} */
 .video .profile img {
     border-radius: 50%;
     width: 36px;
     height: 36px;
 }
+
 .video .video-details p {
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
-    ackground-color: red; /*main*/
-    cursor: pointer; /*main*/
-    width: fit-content; /*main*/
+    cursor: pointer; 
+    width: fit-content; 
 }
 .video .posted-by {
     font-size: 14px;
@@ -279,42 +252,27 @@ body {
 /* end ----------- video-card--------*/
 
 
-
-
-
-
-/* start -------------- main --------------------------*/
-
 .video .thumbnail {
-   
-    eight: max-content;
     background-color: rgb(232, 232, 232);
     padding: 0;
     margin: 0;
-    display: block;
-   
+    display: block; 
 }
-
 
 iframe.iframe {
     width: 100%;
     background-color: rgb(232, 232, 232);
     bject-fit: fill;
     eight: 100%;
-   
   }
 
   .videos .details {
-    idth: 100%;
     display: flex;
     background-color: rgb(232, 232, 232);
-    rder:  5px dotted orange;
     padding: 5px 0px;
-    order-radius: 3px;
 }
 
 .profile {
-    ackground-color: rgb(71, 176, 211);
     padding: 5px;
 }
 
@@ -322,18 +280,12 @@ iframe.iframe {
    display: flex;
    flex-direction: column;
    padding: 5px;
-   ackground-color: rgb(59, 132, 59);
 }
 
 .profile img{
-    isplay: inline-block;
     width: 40px;
     height: 40px;
     border-radius: 50%;
-}
-
-.views-date {
-  ackground-color: yellow;
 }
 
 .views-date span:nth-child(2) {
@@ -341,7 +293,6 @@ iframe.iframe {
   width: 5px;
   height: 5px;
   border-radius: 50%;
-  olor: green;
   background-color: grey;
   margin-bottom: 2px;
 }
@@ -353,7 +304,6 @@ iframe.iframe {
 }
 
  .navigation-icons .material-icons:nth-child(1){
-    ackground-color: red;
     color: red;
 }
 
@@ -367,4 +317,4 @@ iframe.iframe {
     border-radius: 3px;
     background-color: green;
 }
-/* start -------------------------- main ----------------------------*/
+
