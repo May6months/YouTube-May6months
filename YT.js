@@ -1,4 +1,4 @@
-import { arrayVIDEOS } from './db/db.mjs';
+//import { arrayVIDEOS } from './db/db.mjs';
 
 
 document.addEventListener("DOMContentLoaded", async () => {
