@@ -86,18 +86,18 @@ const footerLinks = () => {
 footerLinks()
 
     
-// javascript spinner satrt -------------------------
+// spinner satrt -------------------------
 setTimeout(function() {
   document.querySelector('.loader-wrapper').style.display = 'none';
   const thumbnails = document.querySelectorAll('.thumbnail')
   thumbnails.forEach((thumbnail) => {
     thumbnail.style.display = 'block'
   })
-}, 4000); 
+}, 7000); 
 
 let countdown = document.querySelector(".countdown");
 let seconds = document.querySelector(".seconds");
-let countdownValue = 5;
+let countdownValue = 8;
 function updateCountdown() {
   countdownValue--;
   countdown.innerHTML = `
@@ -110,5 +110,6 @@ function updateCountdown() {
 }
 let countdownInterval = setInterval(updateCountdown, 1000);
 updateCountdown();
-
+// spinner end -------------------------
+    
 }); // DOMContentLoaded  
