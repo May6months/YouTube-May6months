@@ -321,11 +321,12 @@ iframe.iframe {
 
 /* start spinner ---------------------------------------------------------------------------*/
 .loader-wrapper {
-    display: grid;
-    place-content: center;
-    position:fixed;
-    inset: 0;
-    z-index:10;
+  display: grid;
+  place-content: center;
+  inset: 0;
+  position: absolute;
+  background-color: white;
+  z-index: 10;
 }
 
 .loader {
@@ -372,8 +373,8 @@ iframe.iframe {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 95px;
-  height: 95px;
+  width: 85px;
+  height: 85px;
   border-radius: 50%;
 
   font-size: 25px;
