@@ -85,4 +85,30 @@ const footerLinks = () => {
 };
 footerLinks()
 
+    
+// javascript spinner satrt -------------------------
+setTimeout(function() {
+  document.querySelector('.loader-wrapper').style.display = 'none';
+  const thumbnails = document.querySelectorAll('.thumbnail')
+  thumbnails.forEach((thumbnail) => {
+    thumbnail.style.display = 'block'
+  })
+}, 4000); 
+
+let countdown = document.querySelector(".countdown");
+let seconds = document.querySelector(".seconds");
+let countdownValue = 5;
+function updateCountdown() {
+  countdownValue--;
+  countdown.innerHTML = `
+  <img class="image-YT" src="https://www.vectorlogo.zone/logos/youtube/youtube-ar21.svg" alt="">
+  `;
+  seconds.innerHTML = `${countdownValue}`
+  if (countdownValue === 0) {
+    clearInterval(countdownInterval);
+  }
+}
+let countdownInterval = setInterval(updateCountdown, 1000);
+updateCountdown();
+
 }); // DOMContentLoaded  
